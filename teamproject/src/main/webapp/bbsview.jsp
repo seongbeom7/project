@@ -77,15 +77,14 @@
 			<%
 				if(mem_id != null && mem_id.equals(bbs.getMem_id())){
 			%>
-					<a href="update.jsp?bbsID=<%= mem_id %>" class="btn btn-primary">수정</a>
-					<a href="deleteAction.jsp?bbsID=<%= mem_id %>" class="btn btn-primary">삭제</a>
+					<a href="update.jsp?bbs_idx=<%= bbs_idx %>" class="btn btn-primary">수정</a>
+					<a href="deleteAction.jsp?bbs_idx=<%= bbs_idx %>" class="btn btn-primary">삭제</a>
 			<%
 				}
 			%>
 		</div>
 	</div>
 	
-	<!-- footer 부분 -->
 	<jsp:include page="footer.jsp"/>
 
 </body>

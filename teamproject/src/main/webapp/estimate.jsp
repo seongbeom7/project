@@ -5,13 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div class="footer">
-      <div class="footersum">
-        <p>회사소개</p>
-      </div>
-    </div>
+	<jsp:include page="header.jsp"/>
+	
+	<div class = "section">
+		<div class = "article1">
+		
+		
+		</div>
+		<div class = "article2">
+		
+		</div>
+	</div>
+	
+	<jsp:include page="footer.jsp"/>
 </body>
 </html>

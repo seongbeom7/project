@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import Bbs.Bbs;
+
 
 public class BbsDAO {
 	private Connection conn;
@@ -121,6 +121,35 @@ public class BbsDAO {
 				e.printStackTrace();
 			}
 			return -1; //데이터베이스 오류
+		}
+		
+		//게시글 수정 메소드
+		public int update(int bbs_idx, String bbs_title, String bbs_content) {
+			String sql = "update BBS set bbs_title = ?, bbs_content = ? where bbs_idx = ?";
+			try {
+				PreparedStatement pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, bbs_title);
+				pstmt.setString(2, bbs_content);
+				pstmt.setInt(3, bbs_idx);
+				return pstmt.executeUpdate();
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+			return -1; //데이터베이스 오류
+		}
+		
+		//게시글 삭제 메소드
+		public int delete(int bbs_idx) {
+			//실제 데이터를 삭제하는 것이 아니라 게시글 유효숫자를 '0'으로 수정한다
+			String sql = "update BBS set bbs_available = 0 where bbs_idx = ?";
+			try {
+				PreparedStatement pstmt = conn.prepareStatement(sql);
+				pstmt.setInt(1, bbs_idx);
+				return pstmt.executeUpdate();
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+			return -1; //데이터베이스 오류 
 		}
 	
 }

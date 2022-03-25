@@ -42,8 +42,7 @@
 
     </aside>
 
-    <!-- footer 부분 -->
-	<jsp:include page="footer.jsp"/>
+    <jsp:include page="footer.jsp"/>
 
   </body>
 </html>
