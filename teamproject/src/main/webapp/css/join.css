@@ -1,0 +1,43 @@
+* {margin:0;padding:0;}
+.logindiv{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.login {
+  list-style: none;
+  display: inline-block;
+}
+.login > li {
+  width: 450px;
+  margin: 20px;
+  text-align: left;
+}
+.login > li > h3{
+
+}
+.login > li > input {
+  clear: both;
+  height: 30px;
+  width: 450px;
+}
+.brith > input  {
+  clear: both;
+  height: 30px;
+  width: 170px;
+}
+.brith > select {
+  clear: both;
+  height: 33px;
+  width: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.cancel {
+  clear: both;
+  height: 30px;
+  width: 450px;
+  background-color: lightgray;
+  text-align: center;
+  border:1px solid black;
+}

@@ -1,0 +1,120 @@
+* {margin:0;padding:0;}
+
+.header{
+  width: 1000px;
+  margin: auto;
+}
+.logo {
+  float: left;
+  margin: auto;
+}
+.title{
+  float: left;
+  margin: auto;
+}
+.login{
+  float: right;
+  margin: 10px;
+  padding-right: 5px;
+}
+.join{
+  float: right;
+  margin: 10px;
+  padding-right: 30px;
+}
+.join img {
+  height: 33px;
+}
+.nav{
+  margin: 0 auto;
+  clear: both;
+  display: flex;
+  height: 70px;
+  width: 1100px;
+  background: lightgrey;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+.nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.nav ul li{
+  margin: 0 5px;
+}
+.nav ul li a{
+  color: #f2f2f2;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav ul li a.active,
+.nav ul li a:hover{
+  color: #111;
+  background: rgb(255, 255, 255);
+}
+.section{
+  display: flex;
+  min-height: 1000px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.article1{
+  display: flex;
+  width: 500px;
+  height: 300px;
+  background-color: lightgray;
+  align-items: center;
+  justify-content: center
+}
+.login2{
+  margin: 0 auto;
+  width: 350px;
+  height: 200px;
+}
+.loginsub > input {
+  float: left;
+  width: 210px;
+  height: 30px;
+  margin: 5px;
+}
+.login2 .login3 {
+  width: 100px;
+  height: 80px;
+  float: right;
+}
+.passwordsearch{
+  margin-right: 30px;
+  float: left;
+  width: 120px;
+  height: 30px;
+}
+.join2{
+  float: left;
+  width: 100px;
+  height: 30px;
+}
+.footer{
+  clear: both;
+  width: 100%;
+  height: 200px;
+  bottom: 0px;
+  background-color: gray;
+  text-align: center;
+}
+.footer .footersum{
+  width: 1200px;
+  display: inline-block;
+}
+
+hr{
+  clear: both;
+}
