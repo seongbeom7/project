@@ -37,7 +37,7 @@
 	</div>
 	<!-- 게시판 글쓰기 양식 영역 끝 -->
 	
-	<jsp:include page="footer.jsp"/>
+	<jsp:include page="footer.jsp"/>s
 
 </body>
 </html>
