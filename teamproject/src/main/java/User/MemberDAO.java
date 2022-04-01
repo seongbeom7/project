@@ -130,6 +130,24 @@ public class MemberDAO {
         return String.valueOf(result);
     }
 	
+	public int confirmationCheck(String mem_phone, String mem_confirmation) {
+		String sql = "select mem_confirmation from MEMBER where mem_phone = ?";
+		try {
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, mem_phone);
+				rs = pstmt.executeQuery();
+				if(rs.next()) {
+					if(rs.getString(1).equals(mem_confirmation)) {
+						return 1;
+					}else
+						return 0;
+				}
+				return -1;
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -2;
+	}
 	
 	
 }
