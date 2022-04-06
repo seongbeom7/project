@@ -1,9 +1,12 @@
 <%@page import="java.io.PrintWriter"%>
+<%@page import="java.util.regex.Matcher"%>
+<%@page import="java.util.regex.Pattern"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="User.MemberDAO" %>
 <%@ page import="User.Member" %>     
 	<%PrintWriter script = response.getWriter();
+	
 	if(request.getParameter("phonenum") == ""){
 	%>
 bad
